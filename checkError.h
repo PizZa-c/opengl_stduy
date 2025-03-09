@@ -1,0 +1,13 @@
+#pragma once
+
+void checkError();
+
+//‘§±‡“Î∫Í
+#ifdef DEBUG
+#define GL_CALL(func) func;checkError();
+#else
+#define GL_CALL(func) func;
+#endif
+
+
+
