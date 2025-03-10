@@ -1,0 +1,5 @@
+#递归将所有本文件夹下所有CPP放到FUNCS中
+file(GLOB_RECURSE WRAPPER ./ *.CPP)
+
+#将FUNCS中所有CPP编译为FUNCS这个lib库
+add_library(wrapper ${WRAPPER})
